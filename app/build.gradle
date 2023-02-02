@@ -36,4 +36,6 @@ dependencies {
     testImplementation "junit:junit:$jUnitVersion"
     androidTestImplementation "com.android.support.test:runner:$testRunnerVersion"
     androidTestImplementation "com.android.support.test.espresso:espresso-core:$espressoVersion"
+    //wheelView
+    implementation 'com.contrarywind:wheelview:4.1.0'
 }

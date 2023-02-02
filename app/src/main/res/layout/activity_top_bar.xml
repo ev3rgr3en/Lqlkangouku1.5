@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BottomBarActivity">
+    tools:context=".MainActivity">
 
     <com.gauravk.bubblenavigation.BubbleNavigationConstraintView
         android:id="@+id/top_navigation_constraint"
@@ -27,10 +27,10 @@
             app:bt_active="true"
             app:bt_colorActive="@color/orange_active"
             app:bt_colorInactive="@color/orange_inactive"
-            app:bt_icon="@drawable/ic_restaurant"
+            app:bt_icon="@drawable/ic_baseline_looks_4_24"
             app:bt_padding="12dp"
             app:bt_shape="@drawable/transition_background_drawable_default"
-            app:bt_title="@string/restaurant"
+            app:bt_title="@string/CET4"
             app:bt_titlePadding="8dp" />
 
         <com.gauravk.bubblenavigation.BubbleToggleView
@@ -39,10 +39,10 @@
             android:layout_height="wrap_content"
             app:bt_colorActive="@color/red_active"
             app:bt_colorInactive="@color/red_inactive"
-            app:bt_icon="@drawable/ic_room"
+            app:bt_icon="@drawable/ic_baseline_looks_6_24"
             app:bt_padding="12dp"
             app:bt_shape="@drawable/transition_background_drawable_default"
-            app:bt_title="@string/room"
+            app:bt_title="@string/CET6"
             app:bt_titlePadding="8dp" />
 
         <com.gauravk.bubblenavigation.BubbleToggleView
@@ -51,10 +51,10 @@
             android:layout_height="wrap_content"
             app:bt_colorActive="@color/green_active"
             app:bt_colorInactive="@color/green_inactive"
-            app:bt_icon="@drawable/ic_happy"
+            app:bt_icon="@drawable/ic_baseline_generating_tokens_24"
             app:bt_padding="12dp"
             app:bt_shape="@drawable/transition_background_drawable_default"
-            app:bt_title="@string/happy"
+            app:bt_title="@string/TOEFL"
             app:bt_titlePadding="8dp" />
     </com.gauravk.bubblenavigation.BubbleNavigationConstraintView>
 

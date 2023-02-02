@@ -11,4 +11,7 @@
     <string name="shop">Shop</string>
     <string name="photos">Pics</string>
     <string name="call">Call</string>
+    <string name="CET4">CET4</string>
+    <string name="CET6">CET6</string>
+    <string name="TOEFL">TOEFL</string>
 </resources>

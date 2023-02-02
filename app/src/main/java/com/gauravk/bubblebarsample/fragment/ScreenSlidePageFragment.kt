@@ -1,5 +1,6 @@
 package com.gauravk.bubblebarsample.fragment
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v4.content.ContextCompat
@@ -7,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.gauravk.bubblebarsample.R
+import com.gauravk.bubblebarsample.SettingActivity
 
 import kotlinx.android.synthetic.main.fragment_screen_slide_page.*
 
@@ -45,7 +47,15 @@ class ScreenSlidePageFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         inflatedView.setBackgroundColor(ContextCompat.getColor(context!!, bgColorResId))
-        screen_slide_title.text = title
+        screen_slide_button1.text = title+"初级词汇"
+        screen_slide_button2.text = title+"中级词汇"
+        screen_slide_button3.text = title+"高级词汇"
+        screen_slide_button1.setOnClickListener(){
+            val intent = Intent()
+            intent.setClass(this.context, SettingActivity::class.java)
+            startActivity(intent)
+            intent.putExtra("request_content", screen_slide_button1.text.toString());
+        }
     }
 
     companion object {
