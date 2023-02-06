@@ -53,64 +53,64 @@ class ScreenSlidePageFragment : Fragment() {
 
         when(title) {
 
-            "四级词汇" -> {
+            "CET4" -> {
                 screen_slide_button1.setOnClickListener() {
                     val intent = Intent()
                     intent.setClass(this.context, SettingActivity::class.java)
+                    intent.putExtra("词汇数量", 391)
                     startActivity(intent)
-                    intent.putExtra("初级词汇数量", 391);
                 }
                 screen_slide_button2.setOnClickListener() {
                     val intent = Intent()
                     intent.setClass(this.context, SettingActivity::class.java)
+                    intent.putExtra("词汇数量", 492)
                     startActivity(intent)
-                    intent.putExtra("中级词汇数量", 492);
                 }
                 screen_slide_button3.setOnClickListener() {
                     val intent = Intent()
                     intent.setClass(this.context, SettingActivity::class.java)
+                    intent.putExtra("词汇数量", 666)
                     startActivity(intent)
-                    intent.putExtra("高级词汇量", 666);
                 }
             }
-            "六级词汇" -> {
+            "CET6" -> {
                 screen_slide_button1.setOnClickListener() {
                     val intent = Intent()
                     intent.setClass(this.context, SettingActivity::class.java)
+                    intent.putExtra("词汇数量", 491)
                     startActivity(intent)
-                    intent.putExtra("初级词汇数量", 491);
                 }
                 screen_slide_button2.setOnClickListener() {
                     val intent = Intent()
                     intent.setClass(this.context, SettingActivity::class.java)
+                    intent.putExtra("词汇数量", 592)
                     startActivity(intent)
-                    intent.putExtra("中级词汇数量", 592);
                 }
                 screen_slide_button3.setOnClickListener() {
                     val intent = Intent()
                     intent.setClass(this.context, SettingActivity::class.java)
+                    intent.putExtra("词汇数量", 766)
                     startActivity(intent)
-                    intent.putExtra("高级词汇量", 766);
                 }
             }
-            "TOLEF"->{
+            "TOEFL"->{
                 screen_slide_button1.setOnClickListener() {
                     val intent = Intent()
                     intent.setClass(this.context, SettingActivity::class.java)
+                    intent.putExtra("词汇数量", 591)
                     startActivity(intent)
-                    intent.putExtra("初级词汇数量", 591);
                 }
                 screen_slide_button2.setOnClickListener() {
                     val intent = Intent()
                     intent.setClass(this.context, SettingActivity::class.java)
+                    intent.putExtra("词汇数量", 692)
                     startActivity(intent)
-                    intent.putExtra("中级词汇数量", 692);
                 }
                 screen_slide_button3.setOnClickListener() {
                     val intent = Intent()
                     intent.setClass(this.context, SettingActivity::class.java)
+                    intent.putExtra("词汇数量", 866)
                     startActivity(intent)
-                    intent.putExtra("高级词汇量", 866);
                 }
             }
         }
