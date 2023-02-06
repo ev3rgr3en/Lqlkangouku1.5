@@ -52,6 +52,7 @@ class ScreenSlidePageFragment : Fragment() {
         screen_slide_button3.text = title+"高级词汇"
 
         when(title) {
+
             "四级词汇" -> {
                 screen_slide_button1.setOnClickListener() {
                     val intent = Intent()
