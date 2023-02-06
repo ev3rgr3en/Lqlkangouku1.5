@@ -50,12 +50,88 @@ class ScreenSlidePageFragment : Fragment() {
         screen_slide_button1.text = title+"初级词汇"
         screen_slide_button2.text = title+"中级词汇"
         screen_slide_button3.text = title+"高级词汇"
-        screen_slide_button1.setOnClickListener(){
-            val intent = Intent()
-            intent.setClass(this.context, SettingActivity::class.java)
-            startActivity(intent)
-            intent.putExtra("request_content", screen_slide_button1.text.toString());
+
+        when(title) {
+            "四级词汇" -> {
+                screen_slide_button1.setOnClickListener() {
+                    val intent = Intent()
+                    intent.setClass(this.context, SettingActivity::class.java)
+                    startActivity(intent)
+                    intent.putExtra("初级词汇数量", 391);
+                }
+                screen_slide_button2.setOnClickListener() {
+                    val intent = Intent()
+                    intent.setClass(this.context, SettingActivity::class.java)
+                    startActivity(intent)
+                    intent.putExtra("中级词汇数量", 492);
+                }
+                screen_slide_button3.setOnClickListener() {
+                    val intent = Intent()
+                    intent.setClass(this.context, SettingActivity::class.java)
+                    startActivity(intent)
+                    intent.putExtra("高级词汇量", 666);
+                }
+            }
+            "六级词汇" -> {
+                screen_slide_button1.setOnClickListener() {
+                    val intent = Intent()
+                    intent.setClass(this.context, SettingActivity::class.java)
+                    startActivity(intent)
+                    intent.putExtra("初级词汇数量", 491);
+                }
+                screen_slide_button2.setOnClickListener() {
+                    val intent = Intent()
+                    intent.setClass(this.context, SettingActivity::class.java)
+                    startActivity(intent)
+                    intent.putExtra("中级词汇数量", 592);
+                }
+                screen_slide_button3.setOnClickListener() {
+                    val intent = Intent()
+                    intent.setClass(this.context, SettingActivity::class.java)
+                    startActivity(intent)
+                    intent.putExtra("高级词汇量", 766);
+                }
+            }
+            "TOLEF"->{
+                screen_slide_button1.setOnClickListener() {
+                    val intent = Intent()
+                    intent.setClass(this.context, SettingActivity::class.java)
+                    startActivity(intent)
+                    intent.putExtra("初级词汇数量", 591);
+                }
+                screen_slide_button2.setOnClickListener() {
+                    val intent = Intent()
+                    intent.setClass(this.context, SettingActivity::class.java)
+                    startActivity(intent)
+                    intent.putExtra("中级词汇数量", 692);
+                }
+                screen_slide_button3.setOnClickListener() {
+                    val intent = Intent()
+                    intent.setClass(this.context, SettingActivity::class.java)
+                    startActivity(intent)
+                    intent.putExtra("高级词汇量", 866);
+                }
+            }
         }
+//            }
+//            screen_slide_button1.setOnClickListener() {
+//                val intent = Intent()
+//                intent.setClass(this.context, SettingActivity::class.java)
+//                startActivity(intent)
+//                intent.putExtra("初级词汇数量", 391);
+//            }
+//            screen_slide_button2.setOnClickListener (){
+//                val intent = Intent()
+//                intent.setClass(this.context, SettingActivity::class.java)
+//                startActivity(intent)
+//                intent.putExtra("中级词汇数量", 492);
+//            }
+//            screen_slide_button3 . setOnClickListener (){
+//                val intent = Intent()
+//                intent.setClass(this.context, SettingActivity::class.java)
+//                startActivity(intent)
+//                intent.putExtra("request_content", screen_slide_button3.text.toString());
+//        }
     }
 
     companion object {
