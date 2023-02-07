@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="num_text" type="id" ></item>
+    <item name="days_text" type="id"></item>
+    </resources>

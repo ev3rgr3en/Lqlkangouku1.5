@@ -57,19 +57,21 @@ class ScreenSlidePageFragment : Fragment() {
                 screen_slide_button1.setOnClickListener() {
                     val intent = Intent()
                     intent.setClass(this.context, SettingActivity::class.java)
-                    intent.putExtra("词汇数量", 391)
+                    intent.putExtra("number", 391)
+                    intent.putExtra("color",bgColorResId)
                     startActivity(intent)
                 }
                 screen_slide_button2.setOnClickListener() {
                     val intent = Intent()
                     intent.setClass(this.context, SettingActivity::class.java)
-                    intent.putExtra("词汇数量", 492)
+                    intent.putExtra("number", 492)
+                    intent.putExtra("color",bgColorResId)
                     startActivity(intent)
                 }
                 screen_slide_button3.setOnClickListener() {
                     val intent = Intent()
                     intent.setClass(this.context, SettingActivity::class.java)
-                    intent.putExtra("词汇数量", 666)
+                    intent.putExtra("number", 666)
                     startActivity(intent)
                 }
             }
@@ -77,19 +79,19 @@ class ScreenSlidePageFragment : Fragment() {
                 screen_slide_button1.setOnClickListener() {
                     val intent = Intent()
                     intent.setClass(this.context, SettingActivity::class.java)
-                    intent.putExtra("词汇数量", 491)
+                    intent.putExtra("number", 491)
                     startActivity(intent)
                 }
                 screen_slide_button2.setOnClickListener() {
                     val intent = Intent()
                     intent.setClass(this.context, SettingActivity::class.java)
-                    intent.putExtra("词汇数量", 592)
+                    intent.putExtra("number", 592)
                     startActivity(intent)
                 }
                 screen_slide_button3.setOnClickListener() {
                     val intent = Intent()
                     intent.setClass(this.context, SettingActivity::class.java)
-                    intent.putExtra("词汇数量", 766)
+                    intent.putExtra("number", 766)
                     startActivity(intent)
                 }
             }
@@ -97,19 +99,19 @@ class ScreenSlidePageFragment : Fragment() {
                 screen_slide_button1.setOnClickListener() {
                     val intent = Intent()
                     intent.setClass(this.context, SettingActivity::class.java)
-                    intent.putExtra("词汇数量", 591)
+                    intent.putExtra("number", 591)
                     startActivity(intent)
                 }
                 screen_slide_button2.setOnClickListener() {
                     val intent = Intent()
                     intent.setClass(this.context, SettingActivity::class.java)
-                    intent.putExtra("词汇数量", 692)
+                    intent.putExtra("number", 692)
                     startActivity(intent)
                 }
                 screen_slide_button3.setOnClickListener() {
                     val intent = Intent()
                     intent.setClass(this.context, SettingActivity::class.java)
-                    intent.putExtra("词汇数量", 866)
+                    intent.putExtra("number",899)
                     startActivity(intent)
                 }
             }
