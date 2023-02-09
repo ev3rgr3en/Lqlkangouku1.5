@@ -8,6 +8,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_setting.*
+import kotlinx.android.synthetic.main.activity_setting.view.*
 import kotlinx.android.synthetic.main.fragment_screen_slide_page.*
 
 @SuppressLint("WrongViewCast")
@@ -16,7 +17,7 @@ class SettingActivity : AppCompatActivity() {
     private var a = 0
     private var num: Int = 0
     private var days: Int = 0
-    private var inp: Int = 0
+    private var inp: Long = 0
 
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,17 +26,16 @@ class SettingActivity : AppCompatActivity() {
         val tv: TextView? = findViewById(R.id.textView)
         val tvp: TextView? = findViewById(R.id.predict_text)
         val bundle: Bundle? = intent.extras
-        val enteredString = readLine()?.toInt()
         val input = findViewById<EditText>(R.id.textInputEditText)
-        inp = input.text.get().toInt()
+        inp = input.text.toString().trim().toLong()
         num = bundle!!.getInt("number")
         tv?.text = "词汇数量:$num"
-        tvp?.text = "预测学习天数:"+num/ enteredString!!
+        tvp?.text = "预测学习天数:"+num/ inp
         btn = findViewById(R.id.setting_button)
 //        val input = findViewById<EditText>(R.id.textInputEditText)
 //        inp =input.text.toInt()
         setting_button.setOnClickListener {
-            days = num / enteredString
+            days = (num / inp).toInt()
             val intent = Intent()
             intent.setClass(this, PlanActivity::class.java)
             intent.putExtra("days", days)

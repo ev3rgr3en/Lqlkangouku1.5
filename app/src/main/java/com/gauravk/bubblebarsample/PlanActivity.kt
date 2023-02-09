@@ -14,6 +14,6 @@ class PlanActivity : AppCompatActivity() {
         val num: Int =bundle!!.getInt("number")
         val days: Int=bundle!!.getInt("days")
         tvnum?.text = "词汇数量:"+num
-        tvdays?.text="计划天数"+days
+        tvdays?.text="计划天数:"+days
     }
 }

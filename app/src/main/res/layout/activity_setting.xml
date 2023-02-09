@@ -59,6 +59,7 @@
         android:layout_marginBottom="1dp"
         android:hint="一天背多少捏？"
         android:inputType="number"
+        android:text="1"
         app:layout_constraintBottom_toTopOf="@+id/setting_button"
         app:layout_constraintEnd_toEndOf="@+id/setting_button"
         app:layout_constraintStart_toStartOf="@+id/setting_button"
